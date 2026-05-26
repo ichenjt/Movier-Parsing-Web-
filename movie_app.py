@@ -246,6 +246,30 @@ def render_showtimes(movie, rows):
         border-radius:28px;
         box-shadow:0 16px 36px rgba(0,0,0,.26);
     }}
+    @media (max-width: 768px) {{
+        .show-wrap {{
+            display:block;
+        }}
+    
+        .poster {{
+            width:100%;
+            height:auto;
+            max-height:430px;
+            object-fit:contain;
+            margin-bottom:18px;
+        }}
+    
+        .card {{
+            padding:22px;
+            border-radius:24px;
+            max-height:none;
+            overflow:visible;
+        }}
+    
+        .movie-title {{
+            font-size:32px;
+        }}
+    }}
     .card {{
         background:rgba(255,255,255,.96);
         border-radius:34px;
@@ -313,7 +337,7 @@ def render_showtimes(movie, rows):
             {cinema_html}
         </div>
     </div>
-    """, height=820, scrolling=False)
+    """, height=1280, scrolling=True)
 
 st.markdown("""
 <style>
