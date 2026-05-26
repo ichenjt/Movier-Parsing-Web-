@@ -515,9 +515,6 @@ for r in rows:
 if "page" not in st.session_state:
     st.session_state.page = "home"
 
-st.markdown('<div class="logo">Movier.</div>', unsafe_allow_html=True)
-st.markdown('<div class="tagline">Find the right movie time, faster.</div>', unsafe_allow_html=True)
-
 if st.session_state.page == "home":
     render_ads(rows)
 
