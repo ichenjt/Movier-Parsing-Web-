@@ -367,6 +367,63 @@ label {
     font-weight:900;
     margin-top:18px;
 }
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1.2rem 1rem 3rem;
+    }
+
+    .logo {
+        font-size: 52px;
+        letter-spacing: -2px;
+    }
+
+    .tagline {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+
+    .ad-card {
+        flex: 0 0 150px;
+        height: 225px;
+        border-radius: 18px;
+    }
+
+    .ad-title {
+        font-size: 14px;
+        padding: 34px 10px 12px;
+    }
+
+    .show-wrap {
+        display: block;
+    }
+
+    .poster {
+        width: 100%;
+        height: auto;
+        max-height: 520px;
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        padding: 24px;
+        border-radius: 26px;
+        max-height: none;
+    }
+
+    .movie-title {
+        font-size: 34px;
+    }
+
+    .cinema-title {
+        font-size: 22px;
+    }
+
+    .time-btn {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
 </style>
 """, unsafe_allow_html=True)
 
