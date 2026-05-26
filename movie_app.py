@@ -3,7 +3,46 @@ import streamlit.components.v1 as components
 import json, re, html
 from collections import defaultdict
 
-st.set_page_config(page_title="Movier", layout="wide")
+st.set_page_config(
+    page_title="Movier｜全台電影場次查詢",
+    layout="wide"
+)
+st.markdown("""
+<style>
+#MainMenu {visibility:hidden;}
+footer {visibility:hidden;}
+header {visibility:hidden;}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<h1 style="
+font-size:72px;
+font-weight:900;
+color:white;
+margin-bottom:0;
+">
+Movier
+</h1>
+
+<p style="
+font-size:24px;
+color:white;
+margin-top:0;
+font-weight:700;
+">
+全台電影場次快速查詢平台
+</p>
+
+<p style="
+font-size:18px;
+color:white;
+opacity:.9;
+margin-bottom:36px;
+">
+整合威秀、新光、秀泰、國賓影城，即時查詢各地電影時段。
+</p>
+""", unsafe_allow_html=True)
 
 DEFAULT_POSTER = "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=900"
 
@@ -381,15 +420,19 @@ label {
 }
 .page-title {
     color:white;
-    font-size:44px;
+    font-size:56px;
     font-weight:900;
-    margin:12px 0 22px;
+    letter-spacing:-2px;
+    line-height:1.05;
+    margin:18px 0 28px;
+    font-family:'Inter','Noto Sans TC',sans-serif;
 }
 .notice {
-    color:white;
-    font-size:17px;
-    font-weight:900;
-    margin-top:18px;
+    color:rgba(255,255,255,.95);
+    font-size:19px;
+    font-weight:800;
+    letter-spacing:-0.3px;
+    margin-top:22px;
 }
 @media (max-width: 768px) {
     .block-container {
@@ -436,11 +479,23 @@ label {
     }
 
     .movie-title {
-        font-size: 34px;
+        font-size:56px;
+        font-weight:900;
+        color:#10233d;
+        line-height:1.02;
+        letter-spacing:-2px;
+        margin-bottom:12px;
+        font-family:'Inter','Noto Sans TC',sans-serif;
     }
 
     .cinema-title {
-        font-size: 22px;
+        font-size:42px;
+        font-weight:900;
+        color:#10233d;
+        letter-spacing:-1.5px;
+        line-height:1.08;
+        margin-bottom:8px;
+        font-family:'Inter','Noto Sans TC',sans-serif;
     }
 
     .time-btn {
