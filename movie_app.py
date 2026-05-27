@@ -529,6 +529,10 @@ if st.session_state.page == "home":
         "花蓮縣", "台東縣"
     ]
 
+for c in sorted(city_area.keys()):
+    if c not in CITY_ORDER and c != "其他":
+        CITY_ORDER.append(c)
+
     cities = [c for c in CITY_ORDER if c in city_area]
     city = st.selectbox("選擇縣市", cities)
 
