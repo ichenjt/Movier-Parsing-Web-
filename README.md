@@ -3,7 +3,7 @@ Movier 是一個整合台灣多家影城場次資訊的電影查詢網站!
 使用者可以先選擇縣市與區域，再選擇想看的電影，網站會整理出同一區域內不同影城的播放時間，減少逐一打開各影城官網查詢的麻煩。
 
 ## Website
-https://movier-taiwan.streamlit.app/
+https://moviertaiwan.streamlit.app/
 
 ## Features
 - 依縣市與區域查詢電影場次
