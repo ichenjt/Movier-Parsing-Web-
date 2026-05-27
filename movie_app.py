@@ -22,7 +22,7 @@ font-weight:900;
 color:white;
 margin-bottom:0;
 ">
-Movier
+Movier.
 </h1>
 
 <p style="
@@ -60,6 +60,10 @@ def classify(cinema):
         return "台北市", "天母"
     if "長春" in cinema or cinema == "國賓大戲院":
         return "台北市", "長春"
+    if "南港" in cinema:
+        return "台北市", "南港"
+    if "國賓大戲院" in cinema:
+        return "台北市", "西門 / 欣欣"
 
     if "板橋" in cinema:
         return "新北市", "板橋"
